@@ -20,7 +20,7 @@ body {
     margin: 10px;
     padding: 40px 20px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    color: white; /* Mengubah warna teks default jadi putih agar kontras */
+    color: white; 
 }
 
 /* Animasi untuk background gradasi */
@@ -35,40 +35,40 @@ h1 {
     color: #ffffff; 
     font-size: 3rem;
     font-weight: 900;
-    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.5); /* Efek bayangan biar tulisan timbul */
+    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.5); 
     margin-bottom: 30px;
     letter-spacing: 2px;
 }
 
-ul {
+/* --- STYLING UNTUK MENU NAVIGASI --- */
+ul.menu {
     list-style-type: none;
     text-align: center;
     margin-bottom: 40px;
 }
 
-li {
+ul.menu li {
     display: inline-block;
     padding: 12px 25px;
     margin: 0 10px;
     background-color: rgba(255, 255, 255, 0.2);
-    border-radius: 30px; /* Membuat list seperti tombol membulat */
+    border-radius: 30px; 
     font-weight: bold;
     font-size: 1.1rem;
     cursor: pointer;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
-    transition: all 0.3s ease; /* Transisi halus saat di-hover */
+    transition: all 0.3s ease; 
 }
 
-/* Efek saat kursor diarahkan ke menu (Hover) */
-li:hover {
+ul.menu li:hover {
     background-color: rgba(255, 255, 255, 0.4);
-    transform: translateY(-5px) scale(1.05); /* Efek terangkat */
+    transform: translateY(-5px) scale(1.05); 
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
 }
 
-li a {
+ul.menu li a {
     text-decoration: none;
-    color: white; /* Warna teks link */
+    color: white; 
 }
 
 p {
@@ -76,4 +76,48 @@ p {
     font-size: 1.2rem;
     font-weight: 500;
     text-shadow: 1px 1px 3px rgba(0,0,0,0.4);
+}
+
+/* --- STYLING UNTUK DAFTAR ANGGOTA (BARU) --- */
+.anggota-box {
+    background-color: rgba(0, 0, 0, 0.25); /* Background hitam transparan */
+    backdrop-filter: blur(10px); /* Efek kaca (Glassmorphism) */
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 20px;
+    padding: 30px;
+    margin: 40px auto;
+    max-width: 550px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+}
+
+.judul-anggota {
+    font-size: 1.3rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #ffd700; /* Warna kuning keemasan biar menonjol */
+}
+
+ol.list-anggota {
+    text-align: left;
+    display: table;
+    margin: 0 auto; /* Supaya list berada di tengah box tapi teks rata kiri */
+    font-size: 1.2rem;
+    line-height: 1.8;
+    font-weight: 600;
+    padding-left: 20px;
+}
+
+ol.list-anggota li {
+    padding: 5px 10px;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    cursor: default;
+}
+
+/* Efek asik saat nama anggota disorot mouse */
+ol.list-anggota li:hover {
+    transform: translateX(10px); /* Geser sedikit ke kanan */
+    color: #111;
+    background-color: #ffd700; /* Berubah jadi kuning */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
 }
