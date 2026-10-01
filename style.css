@@ -1,0 +1,13 @@
+h1 {text-align:center;
+   color:red;
+   font-family:arial;
+   font-weight:bold;
+   }
+ul{list-style-type:none;
+  }
+body {background-color:orange;
+     border:5px solid gray;
+     border-radius:5px;
+     }
+li{display:inline;
+  padding:10px;}
