@@ -1,18 +1,46 @@
-h1 {text-align:center;
-   color:maroon;
-   font-family:arial;
-   font-weight:bold;
-   }
-ul{list-style-type:none;
-  }
-body {background-color:orange;
-     border:5px solid gray;
-     border-radius:5px;
-     }
-li{display:inline;
-  padding:10px;}
-img{ display: block;
-  margin-left: auto;
+
+/* Pengaturan halaman */
+body {
+    margin: 0;
+    min-height: 100vh;
+
+    /* Background lukisan Van Gogh */
+    background-color: #071B3A;
+    background-image: url("background-van-gogh.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+    /* Font halaman */
+    font-family: Arial, sans-serif;
+}
+
+/* Judul */
+h1 {
+    text-align: center;
+    color: #FFD966;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+}
+
+/* Menu navigasi */
+ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+}
+
+li {
+    display: inline-block;
+    padding: 10px;
+}
+
+/* Gambar dan logo */
+img {
+    display: block;
+    margin-left: auto;
     margin-right: auto;
-    width:200 px;
+    width: 200px;
+    height: auto;
 }
